@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block page_title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "base.css" %}">
+    {% block css_page %}{% endblock %}
+  </head>
+  <body>
+    <header class="main-nav">
+      <h1><a id="anchor" href="{% url "home" %}">Lesan' Blog</a></h1>
+      <nav>
+        <a id="anchor" href="{% url "read-later" %}">Read Later Posts</a>
+        <a id="anchor" href="{% url "all-posts" %}">All Posts</a>
+      </nav>
+    </header>
+    {% block content %}{% endblock %}
+  </body>
+</html>

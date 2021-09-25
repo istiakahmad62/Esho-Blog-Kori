@@ -1,0 +1,127 @@
+.summary,
+article {
+    margin: 2rem 5rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(100, 20, 192);
+}
+
+.summary > .left-title > h2 {
+    margin: 2.5rem 0 1 rem;
+    font-size: 3rem;
+}
+
+#tag {
+    padding: 0.5rem;
+    background-color: white;
+    color: #390281;
+    border-radius: 5px;
+}
+
+#read_later {
+    margin: 1rem auto;
+}
+
+#read_later button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#read_later button:hover,
+#read_later button:active {
+    background-color: white;
+    color: #390281;
+}
+
+.summary > .right-title > img {
+    width: 150px;
+    height: 150px;
+    transform: rotateZ(5deg);
+    border: 2.5px solid white;
+    border-radius: 10px;
+}
+
+.summary a{
+    color: white;
+    text-decoration: none;
+}
+
+#article {
+    margin: 1rem 5rem auto;
+    padding: 1.5rem;
+    max-height: 10rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#comments { 
+    margin: 2rem 5rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px #aaaaaa;
+}
+
+#comments li{
+    border-bottom: 2px solid #aaaaaa;
+}
+
+#comments li:last-of-type {
+    border-bottom: none;
+}
+
+#comment-form {
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 20rem;
+    background-color: white;
+    box-shadow: 0 2px #aaaaaa;
+}
+
+#comment-form button {
+    margin: auto 5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(65, 15, 122);
+    border: 1px solid rgb(65, 15, 122);
+}
+
+#comment-form button:hover,
+#comment-form button:active {
+    background-color: rgb(98, 17, 190);
+    border: 1px solid rgb(98, 17, 190);
+}
+
+.form-control label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea {
+    width: 100%;
+    padding: 0.25rem;
+    margin-bottom: 5px;
+    font: inherit;
+    border-radius: 10px;
+    border: 1px solid #999999;
+}
+
+

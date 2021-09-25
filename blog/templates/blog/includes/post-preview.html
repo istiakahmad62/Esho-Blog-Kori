@@ -1,0 +1,13 @@
+{% load static %}
+
+<li>
+    <article class="posts">
+      <a id="anchor" href="{{ post.get_absolute_url }}">
+        <img src="{{ post.image.url }}" alt="" />
+        <h4>{{post.title}}</h4>
+        <p>
+          {{post.excerpt}}
+        </p>
+      </a>
+    </article>
+  </li>

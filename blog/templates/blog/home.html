@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}{{title}}{% endblock %} 
+{% block css_page %}
+  <link rel="stylesheet" href="{% static "blog/home.css" %}">
+  <link rel="stylesheet" href="{% static "blog/post-preview.css" %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="welcome">
+  <div class="welcome-header">
+    <img src="{% static "blog/images/author.jpg" %}" alt="The author of the blog" />
+    <h1><span>LESAN'S </span><span>BLOG</span></h1>
+  </div>
+  <p id="welcome-intro">
+    Hi, I am Lesan and I love to blog about tech and the world!
+  </p>
+</section>
+
+<section class="latest-posts">
+  <h2>My Latest Thoughts</h2>
+  <ul class="ul-posts">
+    {% for post in latest_posts %}
+      {% include 'blog/includes/post-preview.html' %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="about">
+  <h2>What I Do</h2>
+  <p>
+    I love programming, I love to help others and I enjoy exploring new technologies in general!
+  </p>
+  <p>
+    My goal is to keep on growing as a developer - and if I could help you do the same, I'de be very happy!
+  </p>
+</section>
+
+{% endblock %}

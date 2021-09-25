@@ -1,0 +1,43 @@
+.read-later-posts {
+    width: 90%;
+    max-width: 40rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.read-later-posts h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.read-later-posts li {
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 90%;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 5px;
+}
+
+.read-later-posts li:hover,
+.read-later-posts li:active {
+    background-color: rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+.read-later-posts a {
+    text-decoration: none;
+    color: black;
+    font: inherit;
+    font-weight: bold;
+}
+
+.read-later-posts a:hover,
+.read-later-posts a:active {
+    color: white;
+    width: 1.5rem;
+    font-weight: bold;
+    transition: 1s;
+}
